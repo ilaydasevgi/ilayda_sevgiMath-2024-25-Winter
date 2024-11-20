@@ -4,11 +4,46 @@ Exercises 2024/2025
 
 ## 1. Basic Operations on Matrices
 
-1. Calculate the sum of matrices $\mathbf{A}=\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ and $\mathbf{B}=\begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}$.
+For follwing matrices 
 
-2. Calculate the product of matrix $\mathbf{A}=\begin{pmatrix} 4 & 2 \\ 12 & 4 \end{pmatrix}$ and scalar $k=\frac{1}{4}$.
+$$
+\mathbf{A}=
+\begin{pmatrix}
+1 & 2 \\
+3 & 4 
+\end{pmatrix}
+\qquad
+\mathbf{B}=
+\begin{pmatrix}
+5 & 6 \\
+7 & 8
+\end{pmatrix}
+\quad
+\mathbf{C}=
+\begin{pmatrix}
+-1 & 2 \\
+3 & 0
+\end{pmatrix}
+\qquad
+\mathbf{D}=
+\begin{pmatrix}
+-1 & 2 & 3 \\
+4 & 0 & 6 
+\end{pmatrix}
+\qquad
+\mathbf{E}=
+\begin{pmatrix}
+1 & 2\\
+4 & 5\\
+7 & 8
+\end{pmatrix}
+$$
 
-3. Calculate the products $\mathbf{A}\cdot \mathbf{B}$ and $\mathbf{B} \cdot \mathbf{A}$ for matrices $\mathbf{A}=\begin{pmatrix} 3 & 2 \\ 2 & 4 \end{pmatrix}$ and $\mathbf{B}=\begin{pmatrix} 4 & 1 \\ 6 & 4 \end{pmatrix}$.
+1. Calculate: $\mathbf{A}+\mathbf{B}$;  $\mathbf{B}-\mathbf{A}$;  $\mathbf{A}+\mathbf{C}$; $\mathbf{D}+\mathbf{E}$. 
+
+2. Calculate $\frac{1}{2}\mathbf{A}$, $2\mathbf{B}$, $-3\mathbf{C}$, and $4\mathbf{D}$.
+
+3. Calculate the products $\mathbf{A}\cdot \mathbf{B}$; $\mathbf{B} \cdot \mathbf{A}$; $\mathbf{A} \cdot \mathbf{D}$; $\mathbf{D} \cdot \mathbf{E}$.
 
 ## 2. Determinants 2x2 and 3x3
 
@@ -116,29 +151,24 @@ $$
 
 ## 5. Inverse of a Matrix from the formula
 
-1. Find the inverse matrix for matrix
+1. Find the inverse matrix for matrix 
 
-$$
-\mathbf{A}
-=
-\begin{pmatrix}
+$$\mathbf{A}=\begin{pmatrix}
 2 & 0 & 1 \\
 0 & 1 & 0 \\
 1 & 2 & 0
-\end{pmatrix}
-$$
+\end{pmatrix}$$
 
 and verify if the result is correct.
 
 2. Determine the rank of the matrix:
-$$
-\mathbf{B} = 
+
+$$\mathbf{B} =
 \begin{pmatrix}
 4 & -3 & 7 \\
 -1 & 6 & 3 \\
 2 & 9 & 1
-\end{pmatrix}
-$$
+\end{pmatrix}$$
 
 ## 6. Inverse of a Matrix using the Gauss Method
 
@@ -178,47 +208,58 @@ Solve the following systems of equations without using matrices:
 ## 8. Linear equations by Cramer's Rule
 
 1. Solve the system of equations:
-   $$
-   \begin{cases}
-   2x_1 - 3x_2 = 7 \\
+
+$$\begin{cases}
+   2x_1 - 3x_2 = 7\\
    3x_1 + 5x_2 = 2
-   \end{cases}
-   $$
+\end{cases}$$
 
 2. Solve the system of equations:
-   $$
-   \begin{cases}
+
+$$\begin{cases}
    2x + y - z = 1 \\
    x - y + 2z = 4 \\
    3x - 2z = -1
-   \end{cases}
-   $$
+\end{cases}$$
 
 3. Solve the system of equations:
-   $$
-   \begin{cases}
+
+$$\begin{cases}
    x + y + z - t = 2 \\
    x - z + 2t = 6 \\
    2x - 3y + t = 4 \\
    3x + y + 3z - 4t = -2
-   \end{cases}
-   $$
+\end{cases}$$
 
 4. Why can't the following system of equations be solved using Cramer's rule?
-$$
-\begin{cases}
+
+$$\begin{cases}
 x_1 + 2x_2 + 3x_3 = 3 \\
 4x_1 + 5x_2 + 6x_3 = 2 \\
 7x_1 + 8x_2 + 9x_3 = 1
-\end{cases}
-$$
+\end{cases}$$
 
 ## 9. Linear equations by Gauss Elimination
 
-$$
-\left\{\begin{array}{c}{x+2 y-2 z=4} \\ {2 x+y+z=0} \\ {3 x+2 y+z=1}\end{array}\right.\quad
-\left\{\begin{array}{c}{x+y+z-t=2} \\ {2 x+y+z=3} \\ {-x+z-t=0} \\ {3 x+2 y-z+2 t=-1}\end{array}\right.\quad
-\left\{\begin{array}{c}{x+y-z-t=0} \\ {2 x+3 y-2 z+t=4} \\ {3 x+5 z=0} \\ {-x+y-3 z+2 t=3}\end{array}\right.
+$$\begin{cases}
+x + 2y - 2z = 4 \\
+2x + y + z = 0 \\
+3x + 2y + z = 1
+\end{cases}
+\quad
+\begin{cases}
+x + y + z - t = 2 \\
+2x + y + z = 3 \\
+-x + z - t = 0 \\
+3x + 2y - z + 2t = -1
+\end{cases}
+\quad
+\begin{cases}
+x + y - z - t = 0 \\
+2x + 3y - 2z + t = 4 \\
+3x + 5z = 0 \\
+-x + y - 3z + 2t = 3
+\end{cases}
 $$
 
 ## 10. Linear equations by Matrix Inversion
